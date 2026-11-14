@@ -1,3 +1,7 @@
-#!/usr/bin/env python3
+from flask import Flask
 
-print("Hello from main.py")
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello from Render PaaS! Version 1 - Cloud Computing Group Project"
